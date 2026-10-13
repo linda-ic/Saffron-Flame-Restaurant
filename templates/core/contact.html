@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contact {% endblock %}
+{% block content %}
+    <div class="text-center mt-7 mb-7"><i class="bi bi-telephone text-8xl"></i></div>
+    <hr class="border border-[#C6A54A]/10 max-w-6xl mx-auto">
+
+    <div class="bg-[#0F2622] max-w-3xl rounded-3xl shadow-xl border border-[#e8d5a0]/10 md:mx-auto mx-4 p-8 font-[PlayfairDisplay] mt-9 mb-9">
+        <form action="#" method="POST" class="text-center">
+            {% csrf_token %}
+            <div>
+                <label for="full-name" class="block font-semibold mb-3 font-[Inter]"><i class="bi bi-person"></i> Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name here..." class="mb-3 w-full max-w-md mx-auto rounded-lg bg-[#081815] px-6 py-3 border border-[#C6A54A]/30 text-[#C6A54A] block">
+            </div>
+            <div>
+                <label for="email" class="block font-semibold mb-3 font-[Inter]"><i class="bi-envelope-at"></i> Email</label>
+                <input type="email" id="email" placeholder="Enter your email here..." class="mb-3 w-full max-w-md mx-auto rounded-lg bg-[#081815] px-6 py-3 border border-[#C6A54A]/30 text-[#C6A54A] block">
+            </div>
+            <div>
+                <label for="number" class="block font-semibold mb-3 font-[Inter]"><i class="bi bi-phone-vibrate"></i> Telephone Number</label>
+                <input type="text" id="number" class="mb-3 w-full max-w-md mx-auto rounded-lg bg-[#081815] px-6 py-3 border border-[#C6A54A]/30 text-[#C6A54A] block" placeholder="07X XXX XXX">
+            </div>
+            <div>
+                <label for="subject" class="font-semibold block mb-3 font-[Inter]"><i class="bi bi-list-check"></i> Subject</label>
+                <select name="subject" id="subject" class="cursor-pointer mb-3 w-full max-w-md mx-auto rounded-lg bg-[#081815] px-6 py-3 border border-[#C6A54A]/30 text-[#C6A54A] block">
+                    <option value="media">Media</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="private">Private Events</option>
+                    <option value="catering">Catering</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+            <div>
+                <label for="message" class="block font-semibold mt-3 mb-3 font-[Inter]"><i class="bi bi-pencil-square"></i> Message</label>
+                <textarea name="message" id="message" rows="5" class="mb-3 w-full max-w-md mx-auto rounded-lg bg-[#081815] px-6 py-3 border border-[#C6A54A]/30 text-[#C6A54A] block" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="bg-[#b3933b] text-[#081815] font-[Inter] cursor-pointer hover:shadow-md hover:shadow-[#C6A54A]/30 transition w-full max-w-md py-4 rounded-lg font-semibold mt-5"><i class="bi bi-send-check"></i> Submit</button>
+        </form>
+    </div>
+{% endblock %}
