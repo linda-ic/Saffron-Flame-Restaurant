@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Updating navbar from base.html">
-      <change afterPath="$PROJECT_DIR$/core/static/images/contact-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/hero-logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/isombe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/menu-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/pork.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/pumpkin-stew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/reservations.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/core/partials/navbar.html" afterDir="false" />
+    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Added pictures">
+      <change afterPath="$PROJECT_DIR$/core/static/images/avocado-salad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/cheesecake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/coconut-bites.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/coffee-mousse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/creme-brulee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/grilled-goat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/grilled-skewers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/plantaincr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/roast-chicken.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/sambaza.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/sweet-potato.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/static/images/tart.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/core/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/reservations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/partials/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,7 @@
       <updated>1791917601522</updated>
       <workItem from="1791917602562" duration="4463000" />
       <workItem from="1791959089286" duration="5772000" />
-      <workItem from="1791980509822" duration="2420000" />
+      <workItem from="1791980509822" duration="6326000" />
     </task>
     <task id="LOCAL-00001" summary="updated settings.py">
       <option name="closed" value="true" />
@@ -148,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791967243024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added pictures">
+      <option name="closed" value="true" />
+      <created>1791988275489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791988275489</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated settings.py" />
     <MESSAGE value="Updating navbar from base.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating navbar from base.html" />
+    <MESSAGE value="Added pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pictures" />
   </component>
 </project>
