@@ -1,7 +1,6 @@
-
-<nav class="flex justify-between py-6 px-6 bg-gradient-to-r from-[#0F2622] to-[#081815]">
-    <a href="{% url 'home' %}" class="tracking-wide">Saffron Flame <i class="bi bi-fire text-xl"></i></a>
-    <ul class="flex space-x-6">
+<nav class="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 px-6 bg-gradient-to-r from-[#0F2622] to-[#081815]">
+    <a href="{% url 'home' %}" class="tracking-wide"><span class="hidden sm:inline">Saffron Flame </span><i class="bi bi-fire text-xl"></i></a>
+    <ul class="flex flex-col sm:flex-row items-center gap-3 sm:space-x-6 text-center">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'reservation' %}">Reservations</a></li>
         <li><a href="{% url 'menu' %}">Menu</a></li>
