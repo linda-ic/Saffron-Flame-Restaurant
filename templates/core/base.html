@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-gradient-to-b from-[#050C0A] via-[#0F2622] to-[#081815] text-[#C6A54A] font-[Inter]">
-
-    <nav class="flex justify-between py-6 px-6 bg-gradient-to-r from-[#0F2622] to-[#081815]">
-        <a href="{% url 'home' %}">Saffron Flame</a>
-        <ul class="flex space-x-6">
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'reservation' %}">Reservations</a></li>
-            <li><a href="{% url 'menu' %}">Menu</a></li>
-            <li><a href="{% url 'contact' %}">Contact Us</a></li>
-        </ul>
-    </nav>
+    {% include 'core/partials/navbar.html' %}
 
     {% block content %}
     {% endblock %}

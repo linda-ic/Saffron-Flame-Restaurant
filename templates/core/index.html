@@ -1,22 +1,26 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 {% block content %}
-    <!-- HERO SECTION -->
-    <section class="bg-gradient-to-r from-[#081815] via-[#0F2622] to-[#050C0A] h-[70vh] relative p-8 flex items-center justify-center border-b border-[#C6A54A]/20">
-        <div class="relative max-w-4xl mx-auto text-center">
-            <div class="text-[#C6A54A] mb-6">
-                <i class="bi bi-cup-straw text-7xl"></i>
+    <!-- HERO SECTION WITH BACKGROUND IMAGE -->
+    <section
+        class="relative h-[70vh] p-8 flex items-center justify-center bg-cover bg-center border-b border-[#C6A54A]/20"
+        style="background-image: linear-gradient(to right, rgba(8, 24, 21, 0.85), rgba(15, 38, 34, 0.75), rgba(5, 12, 10, 0.85)), url('{% static 'images/hero-logo.jpeg' %}');"
+    >
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <div class="text-[#C6A54A] mb-4">
+                <i class="bi bi-fire text-6xl"></i>
             </div>
-            <h1 class="mb-6 text-5xl font-[PlayfairDisplay]">An Elevated Taste of Rwanda</h1>
-            <p class="text-[#e6c057] text-lg max-w-2xl mx-auto">A refined dining experience inspired by the elegance of Kigali and the richness of East African heritage. At Saffron Flame, every plate tells a story of culture, craft, and flame.</p>
-            <a href="{% url 'menu' %}" class="inline-block cursor-pointer bg-[#081815] rounded-full px-6 py-3 border border-[#C6A54A]/40 hover:border-[#C6A54A] transition hover:shadow-[#C6A54A]/50 hover:shadow-md mt-8 font-semibold">
+            <h1 class="mb-6 text-5xl font-[PlayfairDisplay] font-bold text-[#C6A54A]">An Elevated Taste of Rwanda</h1>
+            <p class="text-[#e6c057] text-lg max-w-2xl mx-auto font-[Inter]">A refined dining experience inspired by the elegance of Kigali and the richness of East African heritage. At Saffron Flame, every plate tells a story of culture, craft, and flame.</p>
+            <a href="{% url 'menu' %}" class="inline-block cursor-pointer bg-[#081815]/90 rounded-full px-8 py-3 border border-[#C6A54A]/40 hover:border-[#C6A54A] text-[#C6A54A] transition hover:shadow-[#C6A54A]/50 hover:shadow-md mt-8 font-semibold">
                 <i class="bi bi-journal-text me-2"></i>View Menu
             </a>
         </div>
     </section>
 
-    <!-- BODY (BUFFET MENU) -->
+    <!-- REST OF YOUR HOME PAGE BODY (BUFFET MENU & CARDS) -->
     <div class="text-center mt-12 mb-6">
         <a href="#" class="text-5xl hover:underline font-[PlayfairDisplay] tracking-wide">Buffet Menu </a>
         <span class="text-5xl font-[PlayfairDisplay]">(SPECIALS!)</span>
@@ -30,25 +34,25 @@
 
     <div class="flex justify-between flex-col md:flex-row gap-10 mt-8 cursor-pointer p-8 max-w-6xl mx-auto">
         <!-- CARD 1 -->
-        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center">
-            <div class="w-full h-36 bg-[#081815] rounded-lg flex items-center justify-center mb-5 text-[#C6A54A]">
-                <i class="bi bi-fire text-6xl"></i>
+        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center overflow-hidden">
+            <div class="w-full h-44 bg-[#081815] rounded-lg mb-5 overflow-hidden">
+                <img src="{% static 'images/pork.jpg' %}" alt="Akabenz" class="w-full h-full object-cover">
             </div>
             <p class="font-bold text-xl font-[PlayfairDisplay]">Akabenz</p>
             <p class="font-semibold text-sm text-[#e6c057]/80 mt-2">Crispy seasoned pork bites, bold smoky Rwandan favorite.</p>
         </div>
         <!-- CARD 2 -->
-        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center">
-            <div class="w-full h-36 bg-[#081815] rounded-lg flex items-center justify-center mb-5 text-[#C6A54A]">
-                <i class="bi bi-flower1 text-6xl"></i>
+        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center overflow-hidden">
+            <div class="w-full h-44 bg-[#081815] rounded-lg mb-5 overflow-hidden">
+                <img src="{% static 'images/isombe.jpg' %}" alt="Isombe" class="w-full h-full object-cover">
             </div>
             <p class="font-bold text-xl font-[PlayfairDisplay]">Isombe</p>
             <p class="font-semibold text-sm text-[#e6c057]/80 mt-2">Creamy cassava leaves simmered in rich peanut sauce.</p>
         </div>
         <!-- CARD 3 -->
-        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center">
-            <div class="w-full h-36 bg-[#081815] rounded-lg flex items-center justify-center mb-5 text-[#C6A54A]">
-                <i class="bi bi-basket text-6xl"></i>
+        <div class="bg-[#0F2622] rounded-xl p-6 w-full md:w-1/3 hover:scale-105 transition shadow-xl border border-[#e8d5a0]/10 text-center flex flex-col items-center justify-center overflow-hidden">
+            <div class="w-full h-44 bg-[#081815] rounded-lg mb-5 overflow-hidden">
+                <img src="{% static 'images/pumpkin-stew.jpg' %}" alt="Pumpkin Stew" class="w-full h-full object-cover">
             </div>
             <p class="font-bold text-xl font-[PlayfairDisplay]">Pumpkin Stew</p>
             <p class="font-semibold text-sm text-[#e6c057]/80 mt-2">Sweet pumpkin and beans stew, hearty traditional comfort.</p>

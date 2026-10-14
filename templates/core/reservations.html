@@ -1,12 +1,25 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
-{% block title %} Reservations {% endblock %}
+{% block title %}Reservations{% endblock %}
 {% block content %}
-    <div class="text-center mt-7 mb-7"><i class="bi bi-calendar-check text-8xl"></i></div>
-    <hr class="border border-[#C6A54A]/20 max-w-6xl mx-auto">
+    <!-- RESERVATION HEADER HERO BANNER -->
+    <section
+        class="relative py-16 px-8 mb-10 flex flex-col items-center justify-center bg-cover bg-center border-b border-[#C6A54A]/20"
+        style="background-image: linear-gradient(to bottom, rgba(8, 24, 21, 0.85), rgba(15, 38, 34, 0.9)), url('{% static 'images/reservations.png' %}');"
+    >
+        <div class="relative text-center z-10 max-w-3xl mx-auto">
+            <div class="text-[#C6A54A] mb-3">
+                <i class="bi bi-calendar-check text-7xl"></i>
+            </div>
+            <h1 class="text-5xl font-[PlayfairDisplay] font-bold text-[#C6A54A] tracking-wide">Table Reservations</h1>
+            <p class="text-[#e6c057] mt-3 font-[Inter] text-lg">Reserve your table for an unforgettable fine dining experience.</p>
+        </div>
+    </section>
 
-    <div class="bg-[#0F2622] max-w-3xl rounded-3xl shadow-xl border border-[#e8d5a0]/10 md:mx-auto mx-4 p-8 font-[PlayfairDisplay] mt-9 mb-9">
-        <form action="#" method="POST" class="text-center py-5 px-5">
+    <!-- FORM SECTION -->
+    <div class="bg-[#0F2622] max-w-3xl rounded-3xl shadow-xl border border-[#e8d5a0]/10 md:mx-auto mx-4 p-8 font-[PlayfairDisplay] mt-4 mb-12">
+        <form action="#" method="POST" class="text-center py-2 px-5">
             {% csrf_token %}
             <div>
                 <label for="full-name" class="block font-semibold mb-3 font-[Inter]"><i class="bi bi-person"></i> Full Name</label>
