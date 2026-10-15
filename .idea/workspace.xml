@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Updated menu.html added cards with price and updated navbar.html" />
+    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Updated menu.html added cards with price and updated navbar.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/partials/navbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +111,7 @@
       <updated>1791917601522</updated>
       <workItem from="1791917602562" duration="4463000" />
       <workItem from="1791959089286" duration="5772000" />
-      <workItem from="1791980509822" duration="21249000" />
+      <workItem from="1791980509822" duration="22564000" />
     </task>
     <task id="LOCAL-00001" summary="updated settings.py">
       <option name="closed" value="true" />
@@ -205,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792086757923</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated menu.html added cards with price and updated navbar.html">
+      <option name="closed" value="true" />
+      <created>1792087137723</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1792087137723</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

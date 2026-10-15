@@ -1,17 +1,33 @@
-<nav class="py-4 px-6 md:px-12 bg-gradient-to-r from-[#0F2622] to-[#081815] text-[#C6A54A] border-b border-[#C6A54A]/20">
+<nav class="py-4 px-6 md:px-12 bg-[#0F2622] text-[#C6A54A] border-b border-[#C6A54A]/30 shadow-xl">
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <!-- Logo (Left side, pulled inward) -->
-        <a href="{% url 'home' %}" class="tracking-wide font-[PlayfairDisplay] text-lg font-semibold flex items-center gap-2">
-            <span>Saffron Flame</span>
-            <i class="bi bi-fire text-xl"></i>
+        <!-- Logo with gold glow & flame hover effect -->
+        <a href="{% url 'home' %}" class="group tracking-widest font-[PlayfairDisplay] text-xl font-bold flex items-center gap-2.5 transition-all duration-300 hover:text-[#E2C775] drop-shadow-[0_2px_8px_rgba(198,165,74,0.25)]">
+            <span class="uppercase">Saffron Flame</span>
+            <i class="bi bi-fire text-xl text-[#C6A54A] group-hover:text-[#FF8C00] transition-colors duration-300 group-hover:scale-110"></i>
         </a>
 
-        <!-- Links (Right side, clean minimalist design) -->
-        <ul class="flex flex-wrap justify-center gap-6 text-sm font-[Inter]">
-            <li><a href="{% url 'home' %}" class="hover:underline transition">Home</a></li>
-            <li><a href="{% url 'reservation' %}" class="hover:underline transition">Reservations</a></li>
-            <li><a href="{% url 'menu' %}" class="hover:underline transition">Menu</a></li>
-            <li><a href="{% url 'contact' %}" class="hover:underline transition">Contact Us</a></li>
+        <!-- Minimalist Links with animated gold bottom borders -->
+        <ul class="flex flex-wrap justify-center items-center gap-8 text-xs sm:text-sm font-[Inter] tracking-wider uppercase font-medium">
+            <li>
+                <a href="{% url 'home' %}" class="relative py-1 text-[#C6A54A]/90 hover:text-[#F3E5AB] transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all after:duration-300">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'reservation' %}" class="relative py-1 text-[#C6A54A]/90 hover:text-[#F3E5AB] transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all after:duration-300">
+                    Reservations
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'menu' %}" class="relative py-1 text-[#C6A54A]/90 hover:text-[#F3E5AB] transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all after:duration-300">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}" class="relative py-1 text-[#C6A54A]/90 hover:text-[#F3E5AB] transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all after:duration-300">
+                    Contact Us
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
