@@ -7,7 +7,7 @@
     <!-- MENU HEADER HERO BANNER -->
     <section
         class="relative py-12 md:py-16 px-6 mb-12 flex flex-col items-center justify-center bg-cover bg-center border-b border-[#C6A54A]/20"
-        style="background-image: linear-gradient(to bottom, rgba(8, 24, 21, 0.85), rgba(15, 38, 34, 0.9)), url('{% static 'images/menu-header.png' %}');"
+        style="background-image: linear-gradient(to bottom, rgba(8, 24, 21, 0.85), rgba(15, 38, 34, 0.9)), url('{% static 'images/menu-header.png' %}' );"
     >
         <div class="relative text-center z-10 max-w-3xl mx-auto">
             <div class="text-[#C6A54A] mb-3">
@@ -26,77 +26,97 @@
 
         <div class="flex flex-wrap justify-center gap-6">
             <!-- Card 1 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/plantaincr.jpg' %}" alt="Plantain Croquettes" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/plantaincr.jpg' %}" alt="Plantain Croquettes" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Plantain Croquettes</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Crispy plantain bites with spiced yogurt dip.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 65,000</span>
+                </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/grilled-skewers.jpg' %}" alt="Grilled Skewers" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/grilled-skewers.jpg' %}" alt="Grilled Skewers" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Grilled Skewers</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Grilled beef skewers with pili pili glaze.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 39,000</span>
+                </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/sambaza.jpg' %}" alt="Lake Kivu Sambaza" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/sambaza.jpg' %}" alt="Lake Kivu Sambaza" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Lake Kivu Sambaza</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Lightly fried crispy fish with lemon herb drizzle.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 45,000</span>
+                </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/sweet-potato.jpg' %}" alt="Sweet Potato Velouté" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/sweet-potato.jpg' %}" alt="Sweet Potato Velouté" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Sweet Potato Velouté</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Silky sweet potato soup infused with nutmeg.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 67,000</span>
+                </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/avocado-salad.jpg' %}" alt="Avocado & Tomato Salad" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/avocado-salad.jpg' %}" alt="Avocado & Tomato Salad" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Avocado & Tomato Salad</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Fresh garden salad with citrus vinaigrette.</p>
                     </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 98,000</span>
                 </div>
             </div>
         </div>
@@ -114,77 +134,97 @@
 
         <div class="flex flex-wrap justify-center gap-6">
             <!-- Card 1 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/pork.jpg' %}" alt="Akabenz Deluxe" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/pork.jpg' %}" alt="Akabenz Deluxe" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Akabenz Deluxe</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Crispy seasoned pork bites, bold smoky Rwandan favorite.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 70,000</span>
+                </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/isombe.jpg' %}" alt="Isombe Royale" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/isombe.jpg' %}" alt="Isombe Royale" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Isombe Royale</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Creamy cassava leaves simmered in rich peanut sauce.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 50,000</span>
+                </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/pumpkin-stew.jpg' %}" alt="Pumpkin & Beans Stew" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/pumpkin-stew.jpg' %}" alt="Pumpkin & Beans Stew" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Pumpkin & Beans Stew</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Sweet pumpkin and beans stew, hearty traditional comfort.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 39,000</span>
+                </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/grilled-goat.jpg' %}" alt="Grilled Goat Brochette Platter" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/grilled-goat.jpg' %}" alt="Grilled Goat Brochette Platter" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Grilled Goat Brochette Platter</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Tender marinated goat served with fried plantains.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 27,000</span>
+                </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/roast-chicken.jpg' %}" alt="Flame-Roasted Chicken Supreme" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/roast-chicken.jpg' %}" alt="Flame-Roasted Chicken Supreme" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Flame-Roasted Chicken Supreme</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Herb-marinated chicken with saffron rice.</p>
                     </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 30,000</span>
                 </div>
             </div>
         </div>
@@ -202,77 +242,97 @@
 
         <div class="flex flex-wrap justify-center gap-6">
             <!-- Card 1 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/cheesecake.jpg' %}" alt="Passionfruit Cheesecake" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/cheesecake.jpg' %}" alt="Passionfruit Cheesecake" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Passionfruit Cheesecake</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Creamy cheesecake with tropical glaze.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 54,000</span>
+                </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/coffee-mousse.jpg' %}" alt="Rwandan Coffee Mousse" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/coffee-mousse.jpg' %}" alt="Rwandan Coffee Mousse" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Rwandan Coffee Mousse</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Silky mousse infused with local Arabica beans.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 19,000</span>
+                </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/coconut-bites.jpg' %}" alt="Coconut Mandazi Bites" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/coconut-bites.jpg' %}" alt="Coconut Mandazi Bites" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Coconut Mandazi Bites</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Light fried dough dusted with vanilla sugar.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 20,000</span>
+                </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/tart.jpg' %}" alt="Caramelized Pineapple Tart" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/tart.jpg' %}" alt="Caramelized Pineapple Tart" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Caramelized Pineapple Tart</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Warm pineapple with buttery pastry crust.</p>
                     </div>
                 </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 30,000</span>
+                </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col">
-                <div class="overflow-hidden h-48">
-                    <img src="{% static 'images/creme-brulee.jpg' %}" alt="Vanilla Bean Crème Brûlée" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
+            <div class="cursor-pointer w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#081815] border border-[#C6A54A]/20 rounded-xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:border-[#C6A54A]/50 flex flex-col justify-between">
+                <div>
+                    <div class="overflow-hidden h-48">
+                        <img src="{% static 'images/creme-brulee.jpg' %}" alt="Vanilla Bean Crème Brûlée" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="p-5">
                         <h3 class="font-semibold text-xl text-[#C6A54A] mb-2">
                             <a href="#" class="hover:underline">Vanilla Bean Crème Brûlée</a>
                         </h3>
                         <p class="text-gray-300 text-sm tracking-wide">Classic custard topped with golden sugar crust.</p>
                     </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between border-t border-[#C6A54A]/10 mt-4">
+                    <span class="text-xs text-gray-400 font-[Inter]">Price</span>
+                    <span class="text-lg font-semibold text-[#C6A54A]">RWF 10,000</span>
                 </div>
             </div>
         </div>
