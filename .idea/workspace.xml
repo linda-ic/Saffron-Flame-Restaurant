@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Added pictures">
-      <change afterPath="$PROJECT_DIR$/core/static/images/avocado-salad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/cheesecake.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/coconut-bites.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/coffee-mousse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/creme-brulee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/grilled-goat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/grilled-skewers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/plantaincr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/roast-chicken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/sambaza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/sweet-potato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/images/tart.jpg" afterDir="false" />
+    <list default="true" id="08b249e6-f0f2-4a3d-bb3d-5ef4e41c086c" name="Changes" comment="Updated menu.html added cards">
+      <change afterPath="$PROJECT_DIR$/core/static/images/logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/core/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/core/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/partials/navbar.html" afterDir="false" />
@@ -123,7 +112,7 @@
       <updated>1791917601522</updated>
       <workItem from="1791917602562" duration="4463000" />
       <workItem from="1791959089286" duration="5772000" />
-      <workItem from="1791980509822" duration="6326000" />
+      <workItem from="1791980509822" duration="20890000" />
     </task>
     <task id="LOCAL-00001" summary="updated settings.py">
       <option name="closed" value="true" />
@@ -157,7 +146,55 @@
       <option name="project" value="LOCAL" />
       <updated>1791988275489</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated settings.py">
+      <option name="closed" value="true" />
+      <created>1791997711878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791997711878</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated base.html added meta tag">
+      <option name="closed" value="true" />
+      <created>1791999516066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791999516066</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated base.html and navbar.html made it responsive">
+      <option name="closed" value="true" />
+      <created>1792000602864</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1792000602864</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated navbar.html made responsive">
+      <option name="closed" value="true" />
+      <created>1792000914562</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1792000914562</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated index.html">
+      <option name="closed" value="true" />
+      <created>1792001087123</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1792001087123</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated menu.html added cards">
+      <option name="closed" value="true" />
+      <created>1792073114423</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1792073114423</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +204,12 @@
     <MESSAGE value="updated settings.py" />
     <MESSAGE value="Updating navbar from base.html" />
     <MESSAGE value="Added pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pictures" />
+    <MESSAGE value="Updated settings.py" />
+    <MESSAGE value="Updated base.html added meta tag" />
+    <MESSAGE value="Updated base.html and navbar.html made it responsive" />
+    <MESSAGE value="Updated navbar.html made responsive" />
+    <MESSAGE value="Updated index.html" />
+    <MESSAGE value="Updated menu.html added cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated menu.html added cards" />
   </component>
 </project>
