@@ -1,12 +1,29 @@
-<nav class="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 px-6 bg-gradient-to-r from-[#0F2622] to-[#081815] text-[#C6A54A]">
-    <a href="{% url 'home' %}" class="tracking-wide font-[PlayfairDisplay] text-lg">
-        <span class="hidden">Saffron Flame </span><i class="bi bi-fire text-xl"></i>
-    </a>
+<nav class="py-4 px-6 md:px-12 bg-gradient-to-r from-[#0F2622] to-[#081815] text-[#C6A54A] border-b border-[#C6A54A]/20">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Left Nav Items -->
+        <ul class="flex items-center gap-6 text-sm md:text-base font-[Inter] tracking-wide order-2 md:order-1">
+            <li>
+                <a href="{% url 'home' %}" class="relative py-1 transition-colors hover:text-[#e6c057] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'reservation' %}" class="relative py-1 transition-colors hover:text-[#e6c057] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all">Reservations</a>
+            </li>
+        </ul>
 
-    <ul class="flex flex-wrap justify-center gap-2 text-xs sm:text-sm font-[Inter]">
-        <li><a href="{% url 'home' %}" class="px-3 py-2 rounded-full bg-[#081815] border border-[#C6A54A]/20 hover:border-[#C6A54A] transition">Home</a></li>
-        <li><a href="{% url 'reservation' %}" class="px-3 py-2 rounded-full bg-[#081815] border border-[#C6A54A]/20 hover:border-[#C6A54A] transition">Reservations</a></li>
-        <li><a href="{% url 'menu' %}" class="px-3 py-2 rounded-full bg-[#081815] border border-[#C6A54A]/20 hover:border-[#C6A54A] transition">Menu</a></li>
-        <li><a href="{% url 'contact' %}" class="px-3 py-2 rounded-full bg-[#081815] border border-[#C6A54A]/20 hover:border-[#C6A54A] transition">Contact Us</a></li>
-    </ul>
+        <!-- Center Brand Logo -->
+        <a href="{% url 'home' %}" class="tracking-wider font-[PlayfairDisplay] text-xl md:text-2xl font-bold flex items-center gap-2 order-1 md:order-2 hover:opacity-90 transition">
+            <span>Saffron Flame</span>
+            <i class="bi bi-fire text-2xl text-[#C6A54A]"></i>
+        </a>
+
+        <!-- Right Nav Items -->
+        <ul class="flex items-center gap-6 text-sm md:text-base font-[Inter] tracking-wide order-3 md:order-3">
+            <li>
+                <a href="{% url 'menu' %}" class="relative py-1 transition-colors hover:text-[#e6c057] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all">Menu</a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}" class="relative py-1 transition-colors hover:text-[#e6c057] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#C6A54A] hover:after:w-full after:transition-all">Contact Us</a>
+            </li>
+        </ul>
+    </div>
 </nav>
